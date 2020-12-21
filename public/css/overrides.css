@@ -1,0 +1,177 @@
+@import url(foundation.min.css);
+
+@font-face {
+  font-family: Fantasy;
+  src: url("./../fonts/Luminari-Regular.woff2");
+}
+.background {
+  background-color: #222; }
+
+.headerbackground {
+  background-color: #440044;
+}
+
+.centerme {
+  text-align: center; }
+
+.edge {
+  background-color: black;
+}
+
+.paddingtop {
+  padding-top: 18px;
+}
+
+.buttonsofepicness {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: Garamond, serif;
+}
+
+.white {
+  color: white;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  font-family: "required", serif;
+}
+
+.padit {
+  padding: 14px;
+}
+
+img {
+  width: 100%
+}
+
+body{
+  background-color: #222;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #8a8a8a;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #950B02;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #c82829;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.banner{
+  background-image: url('./../images/Bottom_Banner.png');
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  bottom: -800px;
+  position: absolute;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#tru-container {
+  height: 100%;
+}
+
+h3 {
+  font-size: 3em;
+  color: #cacaca;
+  padding-top: 10px;
+}
+
+.imageless {
+  display: none;
+}
+@media only screen and (min-width: 499px) {
+  .buttonsofepicness {
+    margin-top: 25px;
+    padding: 40px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .coin {
+    height: 100px;
+    width: 100px;
+  }
+
+  .buttonsofepicness {
+    font-size: 25px;
+  }
+}
+
+#loginModal {
+  display: block;
+}
+
+@media only screen and (min-width: 699px) {
+  .buttonsofepicness {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .headerbackground{
+    height: 10%;
+    width: 100%;
+  }
+  .headerimage{
+    display: none;
+  }
+
+  .imageless{
+    height: 10%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 899px) {
+  .buttonsofepicness {
+    margin-top: 25px;
+    padding: 50px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 100px;
+  }
+}

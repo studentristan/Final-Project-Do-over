@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Bag Of Holding</title>
+        <meta name="description" content="Tristan's Bag of Holding (w/ Server)">
+        <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
+        <link href="../css/overrides.css" type="text/css" rel="stylesheet">
+        <link rel="manifest" href="./../../manifest.json">
+    </head>
+
+    <!-- BODY -->
+
+    <body>
+    <div id = 'tru-container'>
+    <div id="container">
+      <div class="grid-x">
+          <div class="imageless headerbackground"><h1 class="white">Tristan's Bag Of Holding</h1></div>
+          <div class="cell small-4 headerbackground headerimage"><span><img src="../images/Mimic_Bag.png" alt="Mimic Bag Pixel Art" id=""></span></div>
+        <div class="cell small-8 headerbackground headerimage paddingtop"><h1 class="white">Tristan's Bag Of Holding</h1></div>
+      </div>
+        <!-- END OF HEADER. COINS AND VALUES BELOW -->
+        <div class="grid-x">
+            <div class="cell small-12 background padit"></div>
+        </div>
+
+        <div class="grid-x">
+
+            <div class="cell small-3 centerme background">
+                <img src="../images/PL_gif.gif" alt="Platinum" class="coin">
+            </div>
+
+            <div class="cell small-9 background">
+                <h3 id="pl">0</h3>
+            </div>
+
+        </div>
+      <div class="grid-x">
+
+        <div class="cell small-3 centerme background">
+            <img src="../images/G_gif.gif" alt="Gold" class="coin">
+        </div>
+
+        <div class="cell small-9 background">
+            <h3 id="g">0</h3>
+        </div>
+
+      </div>
+
+      <div class="grid-x">
+
+            <div class="cell small-3 centerme background">
+                <img src="../images/S_gif.gif" alt="Silver" class="coin">
+            </div>
+
+            <div class="cell small-9 background">
+                <h3 id="s">0</h3>
+            </div>
+
+      </div>
+
+      <div class="grid-x">
+
+            <div class="cell small-3 centerme background">
+                <img src="../images/C_gif.gif" alt="Copper" class="coin">
+            </div>
+
+            <div class="cell small-9 background">
+                <h3 id="c">0</h3>
+            </div>
+
+          </div>
+      </div>
+
+    <!-- END OF COINS. BUTTON MADNESS BEGINS. -->
+    <div class="grid-x">
+
+    <!-- DEPOSIT BUTTON -->
+
+        <div class="cell small-6 centerme background">
+            <button type="button" class="success button modal-btn buttonsofepicness">Deposit</button>
+
+            <!-- DEPOSIT MODAL -->
+            <div id="depositModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">X</span>
+                    <h1>How much would you like to deposit?</h1>
+                    <div class="grid-x">
+                        <div class="cell small-6 centerme">
+                            <h2>PL</h2>
+                        </div>
+                        <div class="cell small-6 centerme">
+                            <input type="number" value="0" id="dpl">
+                        </div>
+                    </div>
+                    <div class="grid-x">
+                        <div class="cell small-6 centerme">
+                            <h2>G</h2>
+                        </div>
+                        <div class="cell small-6 centerme">
+                            <input type="number" value="0" id="dg">
+                        </div>
+                    </div>
+                    <div class="grid-x">
+                        <div class="cell small-6 centerme">
+                            <h2>S</h2>
+                        </div>
+                        <div class="cell small-6 centerme">
+                            <input type="number" value="0" id="ds">
+                        </div>
+                    </div>
+                    <div class="grid-x">
+                        <div class="cell small-6 centerme">
+                            <h2>C</h2>
+                        </div>
+                        <div class="cell small-6 centerme">
+                            <input type="number" value="0" id="dc">
+                        </div>
+                    </div>
+                    <button type="button" class="success button" id="deposit">Deposit</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- WITHDRAW BUTTON -->
+        <div class="cell small-6 centerme background"><button type="button" class="success button modal-btn buttonsofepicness">Withdraw</button>
+        <div id="WithdrawModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">X</span>
+                <h1>How much would you like to withdraw?</h1>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>PL</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="number" value="0" id="wpl">
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>G</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="number" value="0" id="wg">
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>S</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="number" value="0" id="ws">
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>C</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="number" value="0" id="wc">
+                    </div>
+                </div>
+                <button type="button" class="success button modal-btn" id="withdraw">Withdraw</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+    <div class="grid-x">
+        <div class="cell small-6 centerme"><button class="success button" id="convert-up">Convert Up</button></div>
+        <div class="cell small-6 centerme"><button class="success button" id="convert-down">Convert Down</button></div>
+    </div>
+
+        <div id="loginModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h1>Login</h1>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>Username</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="text" placeholder="admin" id="user">
+                    </div>
+                </div>
+                <div class="grid-x">
+                    <div class="cell small-6 centerme">
+                        <h2>Password</h2>
+                    </div>
+                    <div class="cell small-6 centerme">
+                        <input type="text" placeholder="admin" id="pass">
+                    </div>
+                </div>
+
+                <button type="button" class="success button" id="submit">Submit</button>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    <script src="../javascripts/main.js" type="module"></script>
+
+</html>
